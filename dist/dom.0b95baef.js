@@ -393,6 +393,13 @@ window.dom = {
             fn.call(null, nodeList[i]);
         }
     },
+
+
+    /**
+     * 获取目标节点在所有兄弟元素中的索引
+     * @param {nodeObject} node 目标节点
+     * @returns 索引
+     */
     index: function index(node) {
         var list = dom.children(node.parentNode);
         var i = void 0;

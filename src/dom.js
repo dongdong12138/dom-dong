@@ -265,6 +265,11 @@ window.dom = {
         }
     },
 
+    /**
+     * 获取目标节点在所有兄弟元素中的索引
+     * @param {nodeObject} node 目标节点
+     * @returns 索引
+     */
     index(node) {
         const list = dom.children(node.parentNode)
         let i
